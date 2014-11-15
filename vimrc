@@ -15,7 +15,7 @@ if has("unix")
     set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim
 
     if system('uname') =~ 'Darwin'
-        set guifont=Menlo\ Regular\ for\ Powerline:h14
+        set guifont=Menlo\ Regular\ for\ Powerline:h16
     else
         set guifont=Ubuntu\ Mono\ 12
     endif
@@ -75,6 +75,7 @@ map ,t   <Esc>:!prove -v %<CR>
 nmap ,v :tabedit $MYVIMRC<CR>
 nmap ,q :!perl %<CR>
 nmap ,c :!perl -c %<CR>
+nmap ,w :!plackup %<CR>
 nmap ,a :!python %<CR>
 nmap ,e :TlistOpen<CR>
 
