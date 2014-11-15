@@ -37,3 +37,6 @@
 [submodule "bundle/vim-plantuml"]
 	path = bundle/vim-plantuml
 	url = https://github.com/aklt/plantuml-syntax
+[submodule "bundle/mojo"]
+	path = bundle/mojo
+	url = https://github.com/yko/mojo.vim
