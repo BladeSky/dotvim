@@ -79,8 +79,14 @@ nmap ,w :!plackup %<CR>
 nmap ,a :!python %<CR>
 nmap ,e :TlistOpen<CR>
 
-" mapping for tabularize
+"mappings for tabularize
 nmap ,a= :Tabularize /=<CR>
 vmap ,a= :Tabularize /=<CR>
 nmap ,a: :Tabularize /:\zs<CR>
 vmap ,a: :Tabularize /:\zs<CR>
+
+"mapping for Graphgviz
+map ,gv  <Esc>:!dot -O -Tpng %<CR>
+
+"mapping for plantuml
+map ,pu  <Esc>:!plantuml %<CR>
