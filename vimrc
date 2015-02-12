@@ -86,7 +86,10 @@ nmap ,a: :Tabularize /:\zs<CR>
 vmap ,a: :Tabularize /:\zs<CR>
 
 "mapping for Graphgviz
-map ,gv  <Esc>:!dot -O -Tpng %<CR>
+map ,gs  <Esc>:!dot -O -Tsvg %<CR>
+map ,gf  <Esc>:!dot -O -Tpdf %<CR>
+map ,gg  <Esc>:!dot -O -Tpng %<CR>
+
 
 "mapping for plantuml
 map ,pu  <Esc>:!plantuml %<CR>
