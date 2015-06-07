@@ -94,3 +94,6 @@ map ,gg  <Esc>:!dot -O -Tpng %<CR>
 
 "mapping for plantuml
 map ,pu  <Esc>:!plantuml % -tsvg<CR>
+
+"mapping for json formatter
+map ,js  <Esc>:%!python -m json.tool<CR>
