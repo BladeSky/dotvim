@@ -15,13 +15,15 @@ if has("unix")
     set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim
 
     if system('uname') =~ 'Darwin'
-        set guifont=Menlo\ Regular\ for\ Powerline:h16
+        set guifont=Menlo\ for\ Powerline:h16
     else
         set guifont=Ubuntu\ Mono\ 12
     endif
 elseif has("win32")
     "make powerline display special characters correctly
     set encoding=utf-8
+    set fileencodings=utf-8,cp936
+    language messages zh_CN.utf-8
     source $VIM/_vimrc
     "Fix for fugitive Gdiff E302 error
     set directory+=,~/tmp,$TMP
